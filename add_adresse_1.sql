@@ -1,5 +1,5 @@
 CREATE TABLE kundeadresse (
-    adresseID SERIAL NOT NULL,
+    adresseID SERIAL NOT NULL PRIMARY KEY,
     kundennnr INTEGER NOT NULL,
     stadt TEXT NOT NULL,
     strasse TEXT NOT NULL,
