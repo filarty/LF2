@@ -6,5 +6,7 @@ CREATE TABLE kategorie (
 CREATE TABLE kategorie_rezept (
     kategorieID INTEGER NOT NULL,
     rezeptID INTEGER NOT NULL,
+    FOREIGN KEY (kategorieID) REFERENCES kategorie(kategorieID),
+    FOREIGN KEY (rezeptID) REFERENCES rezept(rezeptid),
     PRIMARY KEY (kategorieID, rezeptID)
 );
