@@ -1,0 +1,1 @@
+CALL kunde_info_remove(1);
